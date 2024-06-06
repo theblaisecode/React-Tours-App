@@ -46,15 +46,11 @@ function App() {
   }
 
   if (isLoading) {
-    return (
-        <Loading />
-    );
+    return <Loading />;
   }
 
   if (isError) {
-    return (
-        <Error errorMessage={isError} />
-    );
+    return <Error errorMessage={isError} />;
   }
 
   if (eachTour.length < 1) {
